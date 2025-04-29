@@ -24,7 +24,7 @@ stdlib.makedir(cfg.input_dir)
 disp("copying config.nml to " + cfg.input_dir)
 % specify filename in case it wasn't config.nml
 copyfile(stdlib.expanduser(cfg.nml), ...
-stdlib.expanduser(fullfile(cfg.input_dir, "config.nml")))
+stdlib.expanduser(fullfile(cfg.input_dir, "config.nml")), 'f')
 
 setup_summary(cfg)
 
